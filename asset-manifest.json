@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/DOCi-landing-page/static/css/main.062ecb7d.chunk.css",
+    "main.js": "/DOCi-landing-page/static/js/main.1b0ecd7e.chunk.js",
+    "main.js.map": "/DOCi-landing-page/static/js/main.1b0ecd7e.chunk.js.map",
+    "runtime-main.js": "/DOCi-landing-page/static/js/runtime-main.170446b9.js",
+    "runtime-main.js.map": "/DOCi-landing-page/static/js/runtime-main.170446b9.js.map",
+    "static/js/2.8e9c832f.chunk.js": "/DOCi-landing-page/static/js/2.8e9c832f.chunk.js",
+    "static/js/2.8e9c832f.chunk.js.map": "/DOCi-landing-page/static/js/2.8e9c832f.chunk.js.map",
+    "index.html": "/DOCi-landing-page/index.html",
+    "static/css/main.062ecb7d.chunk.css.map": "/DOCi-landing-page/static/css/main.062ecb7d.chunk.css.map",
+    "static/js/2.8e9c832f.chunk.js.LICENSE.txt": "/DOCi-landing-page/static/js/2.8e9c832f.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/DOCi-landing-page/static/media/DOCi image.7a53e0f2.webp",
+    "static/media/DOCi-logo.427cefc3.svg": "/DOCi-landing-page/static/media/DOCi-logo.427cefc3.svg",
+    "static/media/vector-pattern.e38642fa.svg": "/DOCi-landing-page/static/media/vector-pattern.e38642fa.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.170446b9.js",
+    "static/js/2.8e9c832f.chunk.js",
+    "static/css/main.062ecb7d.chunk.css",
+    "static/js/main.1b0ecd7e.chunk.js"
+  ]
+}
