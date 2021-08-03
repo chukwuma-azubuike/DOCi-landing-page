@@ -1,6 +1,5 @@
 import './style.css';
 import { useMediaQuery } from 'react-responsive';
-import img from './images/DOCi image.webp';
 import logo from './images/DOCi-logo.svg'
 import pattern from './images/vector-pattern.svg';
 import { CustomButton, RedButton } from '../button/button';
@@ -15,14 +14,13 @@ export default function LandingPage() {
         <div>
             {isBigScreen &&
                 <div className='landing-page-home' >
-                    <div style={{ backgroundImage: `url(${img})`, height: '100%', width: '100%' }} >
-                        <img src={img} style={{ width: '100%', height: '100%', minWidth: '210px', boxShadow: '10px 20px 22px 10px #ed32375c inset' }} ></img>
-                        <img src={logo} style={{ position: 'absolute', left: '72px', top: '62px' }}></img>
+                    <div className='bgimage' style={{ backgroundSize: 'auto', minWidth: '210px', height: '100%', width: '100%', padding: '62px 72px', boxSizing: 'border-box' }} >
+                        <img src={logo} style={{ left: '72px', top: '62px', width: '150px' }}></img>
                     </div>
                     <div style={{ backgroundImage: `url(${pattern})`, height: '100%', width: '100%', padding: '62px 72px', boxSizing: 'border-box' }} >
                         <p className='red small' >COMING SOON</p>
                         <h1>Get notified <br /> when we <span className='launch'>launch</span></h1>
-                        <div className='medium grey bottom-margin text-padding text-div' >
+                        <div className='medium grey bottom-margin text-padding text-div regular-font' >
                             DOCi helps users to keep track of their health and allows them book health care providers on the go. Join our waitlist to be the first to know when we launch.
                         </div>
                         <form>
@@ -38,10 +36,7 @@ export default function LandingPage() {
                 </div>}
             {isTabletOrMobile &&
                 <div>
-                    {/* <div style={{ backgroundImage: `url(${img})`, height: '100%', width: '100%' }} >
-                        <img src={img} style={{ width: '100%', height: '100%', minWidth: '210px', boxShadow: '10px 20px 22px 10px #ed32375c inset' }} ></img>
-                    </div> */}
-                    <div style={{ background: '#c1b7b7', backgroundImage: `url(${img})`, height: '100%', width: '100%', padding: '62px 24px', boxSizing: 'border-box' }} >
+                    <div className='bgimage' style={{ height: '100%', width: '100%', padding: '62px 24px', boxSizing: 'border-box' }} >
                         <img src={logo} style={{ width: '100px' }}></img>
                         <p className='red small' >COMING SOON</p>
                         <h1 style={{ fontSize: '38px', color: 'white', lineHeight: '59px' }} >Get notified <br /> when we <span className='launch' style={{ boxShadow: '0 -13px #ed32375c inset', lineHeight: '36px' }} >launch</span></h1>
@@ -49,7 +44,7 @@ export default function LandingPage() {
                             DOCi helps users to keep track of their health and allows them book health care providers on the go. Join our waitlist to be the first to know when we launch.
                         </div>
                     </div>
-                    <div style={{ padding: '24px 24px' }} >
+                    <div style={{ padding: '24px 24px', backgroundImage: `url(${pattern})`, }} >
                         <form>
                             <label for='fname' >Your first name</label><br />
                             <input className='bottom-margin' type='text' placeholder='Enter your first name' name='fname' required></input><br />
@@ -60,8 +55,7 @@ export default function LandingPage() {
                             <p className='lightgrey margin-zero' >I want to be a <span className='green' >Healthcare provider.</span></p>
                             <span><CustomizedSwitches /></span>
                         </div>
-                        <RedButton label='Notify me' />
-                        <CustomButton />
+                        <div className='bottom-margin' ><CustomButton label='Notify me' width='100%' /></div>
                     </div>
                 </div>
             }

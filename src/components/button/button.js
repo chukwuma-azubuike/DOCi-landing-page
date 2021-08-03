@@ -10,12 +10,14 @@ function RedButton(props) {
 
 function CustomButton(props) {
     return <button
+        className='red-button'
         type='button'
         style={{
-            background: props.bgColor ? props.bgColor : 'black',
-            color: props.color ? props.color : 'white',
-            borderRadius: props.bdRad ? props.bdRad : '6px',
-            padding: props.padding ? props.padding : '22px 235px'
+            background: props.bgColor && props.bgColor,
+            color: props.color && props.color,
+            borderRadius: props.bdRad && props.bdRad,
+            padding: props.padding && props.padding,
+            width: props.width && props.width
         }}>
         {props.label}
     </button>

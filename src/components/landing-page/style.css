@@ -3,6 +3,11 @@
     src: url(../fonts/Circular\ Std\ Medium\ 500.ttf) format("opentype");
 }
 
+@font-face {
+    font-family: Circular Std Regular;
+    src: url(../fonts/Circular\ Std\ Regular.otf) format("opentype");
+}
+
 body {
     margin: 0;
     font-family: Circular Std;
@@ -36,7 +41,7 @@ input::placeholder {
 
 .landing-page-home {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 36% auto;
 }
 
 .launch {
@@ -46,10 +51,6 @@ input::placeholder {
     margin: 0;
     display: inline-block;
     line-height: 56px;
-}
-
-.text-div {
-    line-height: 4vh;
 }
 
 /* Colors */
@@ -70,6 +71,14 @@ input::placeholder {
     color: #3EA584;
 }
 
+/* Background Images */
+
+.bgimage {
+    background: url(./images/DOCi\ image.webp) no-repeat;
+    background-size: 100%;
+    box-shadow: 60px 0 153px -60px black inset;
+}
+
 /* fontsizes */
 
 .small {
@@ -78,6 +87,12 @@ input::placeholder {
 
 .medium {
     font-size: 18px;
+}
+
+/* Fonts */
+
+.regular-font {
+    font-family: Circular Std Regular;
 }
 
 /* Margins */
@@ -96,10 +111,28 @@ input::placeholder {
     padding-right: 20%;
 }
 
+/* LineHeight */
+
+.text-div {
+    line-height: 30px;
+}
+
 /* Resposiveness */
 
 @media (max-width: 540px) {
     input {
         width: 100%
+    }
+}
+
+@media (max-width: 328.9px) {
+    .bgimage {
+        background-size: 120%;
+    }
+}
+
+@media screen and (max-width: 450px) and (min-width: 1025px) {
+    .bgimage {
+        background-size: 120%;
     }
 }
